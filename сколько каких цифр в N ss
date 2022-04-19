@@ -1,0 +1,10 @@
+#сколько каких чисел в N ss
+f = int(input())
+ss = int(input())
+
+ar=[0]*ss
+
+while f<0:
+  ar[f%ss] += 1
+  f //= ss
+ print(ar)
